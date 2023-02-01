@@ -1,0 +1,68 @@
+.movie-detail{
+    width: 80%;
+    padding-top: 50px;
+    .loadings{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        color: rgb(255, 42, 148);
+        .loading{
+            font-size: 3rem;
+        }
+    }
+    .movies{
+        .title{
+            text-align: center;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: #666;
+        }
+        .img-box{
+            text-align: center;
+        }
+        .content{
+            width: 60%;
+            margin: 30px auto;
+
+            .info{
+                >span{
+                    display: block;
+                    line-height: 1.6;
+                }
+                .movie-title{
+                    text-decoration: underline;
+                }
+                .movie-rating{
+                    color: orange;
+                }
+                .movie-runtime{}
+            }
+            .genres{
+                display: flex;
+                .list{
+                    list-style: none;
+                    display: flex;
+                    li{
+                        margin-right: 20px;
+                        position: relative;
+                        &:not(:last-child)::after{
+                            content: "";
+                            position: absolute;
+                            width: 1px;
+                            height: 10px;
+                            background-color: #666;
+                            top: 8px;
+                            right: -10px;
+                        }
+                    }
+                }
+            }
+            .summarys{
+                .summary{}
+            }
+
+        }
+    }
+}
